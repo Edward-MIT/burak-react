@@ -1,0 +1,229 @@
+
+.order-page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f8ff;
+}
+
+.order-page .order-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.order-left {
+  width: 860px;
+  height: auto;
+}
+
+.order-right {
+  width: 360px;
+  height: auto;
+  margin-top: 86px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-nav-frame {
+  background: #f9f9f9;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: inset 0px -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table_list {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.order-info-box {
+  background: #e7e2e2;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  width: 372px;
+  height: 308px;
+}
+
+.order-user-img {
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-user-avatar {
+  width: 117px;
+  height: 112px;
+  border-radius: 50%;
+  border: 3px solid #d1d1d1;
+}
+
+.order-user-prof-img {
+  position: absolute;
+  bottom: 5px;
+  right: 110px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.order-user-name {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.order-user-prof {
+  display: block;
+  font-size: 20px;
+  color: gray;
+  margin-top: 4px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #080101;
+  border: none;
+  margin-top: 50px;
+}
+
+
+/* process uchun */
+.order-main-box {
+  background: hsl(0, 12%, 95%);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  /* background: #4caf50; */
+  width: 821px;
+  height: 360px;
+}
+
+.orders-name-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+
+}
+
+.order-dish-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.title-dish {
+  font-size: 18px;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.total-price-box {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-total {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.data-compl {
+  font-size: 14px;
+  color: gray;
+  font-weight: bold;
+}
+
+.verify-button {
+  background: #4262b1 !important;
+  color: white !important;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.verify-button:hover {
+  background: #1136b9 !important;
+}
+
+.box{
+  margin-top: 40px;
+  width: 400px;
+  height: 400px;
+  background-color: hsl(120, 25%, 95%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(65, 64, 64, 0.718)
+}
+
+.payment-input{
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 360px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.box-input{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+.date-input{
+  margin-top: 50px;
+  height: 50px;
+}
+
+.cvv-input{
+  margin-top: 50px;
+  height: 50px;
+}
+
+.card-name{
+  margin-top: 50px;
+  margin-left: 15px;
+  width: 360px;
+  height: 50px;
+}
+
+.card-img{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
