@@ -10,28 +10,15 @@ interface HomeNavbarProps{
   onRemove: (item: CartItem) => void;
   onDelete: (item: CartItem) => void;
   onDeleteAll: () => void;
+  setSignupOpen: (isOpen: boolean) => void;
+  setLoginOpen: (isOpen: boolean) => void;
 }
 
 export default function HomeNavbar (props: HomeNavbarProps ) {
-  const{cartItems, onAdd, onDelete, onDeleteAll, onRemove} = props;
+  const{cartItems, onAdd, onDelete, onDeleteAll, onRemove, setSignupOpen, setLoginOpen} = props;
  const authMember = null;
- const [count, setCount] = useState<number>(0);
- const [value, setvalue] = useState<any>({status: true});
-
-
-  useEffect(() => {
-    console.log("componentDidMount"); // DATA FETCH
-    setCount(count + 1);
-
-    return () => {
-    console.log("componentWillUnmount");
-    };
-  }, [value]);
 
  /** HANDLERS **/
- const buttonHandler = () => {
-   setvalue(!value);
- }
 
 
  return (<div className="home-navbar">
@@ -72,7 +59,11 @@ export default function HomeNavbar (props: HomeNavbarProps ) {
 
          {!authMember ? (
           <Box>
-            <Button variant="contained" className="login-button">Login</Button>
+            <Button variant="contained"
+            className="login-button"
+            onClick={() => setLoginOpen(true)}
+            >
+              Login</Button>
           </Box>
          ) : (
           <img
@@ -92,13 +83,13 @@ export default function HomeNavbar (props: HomeNavbarProps ) {
           The Choice, not just a choice
         </Box>
         <Box className={"service-txt"}>
-          {count} hours service
+          24 hours service
         </Box>
         <Box className={"signup"}>
           {!authMember ? (
             <Button
               variant={"contained"}
-              className={"signup-button"} onClick={buttonHandler}>
+              className={"signup-button"} onClick={() => setSignupOpen(true)}>
               SIGN UP
             </Button>
           ) : null}
