@@ -116,7 +116,7 @@ export default function ChosenProduct(props: ChosenProductProps) {
                     price: chosenProduct.productPrice,
                     image: chosenProduct.productImages[0],
                 });
-                e.stopPropagation();
+                // e.stopPropagation();
               }}
               >
 
