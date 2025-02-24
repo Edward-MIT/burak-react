@@ -1,4 +1,4 @@
-import { createSelector } from "@reduxjs/toolkit";
+import { createSelector } from "reselect";
 import { AppRootState } from "../../../lib/types/screen";
 import HomePage from ".";
 
@@ -14,7 +14,7 @@ export const retrieveProcessOrders = createSelector(
 );
 
 
-export const retrievefinishedOrders = createSelector(
+export const retrieveFinishedOrders = createSelector(
   selectOrdersPage,
   (OrdersPage) => OrdersPage.finishedOrders
 );

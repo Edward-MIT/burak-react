@@ -108,7 +108,7 @@
   margin-bottom: 20px;
   /* background: #4caf50; */
   width: 821px;
-  height: 360px;
+  height: auto;
 }
 
 .orders-name-price {
@@ -124,7 +124,7 @@
 .order-dish-img {
   width: 60px;
   height: 60px;
-  border-radius: 8px;
+  border-radius: 50%;
   object-fit: cover;
 }
 

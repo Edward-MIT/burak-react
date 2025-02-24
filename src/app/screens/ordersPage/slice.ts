@@ -30,5 +30,5 @@ const ordersPageSlice = createSlice ({
 
 export const {setPausedOrders, setProcessOrders, setFinishedOrders} = ordersPageSlice.actions;
 
-const HomePageReducer = ordersPageSlice.reducer;
-export default HomePageReducer;
+const OrdersPageReducer = ordersPageSlice.reducer;
+export default OrdersPageReducer;

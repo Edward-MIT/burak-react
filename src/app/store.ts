@@ -2,7 +2,7 @@ import { configureStore, ThunkAction, Action, } from "@reduxjs/toolkit";
 import homePageReducer from "./screens/homePage/slice";
 import reduxLogger from "redux-logger";
 import ProductsPageReducer from "./screens/productsPage/slice";
-import OrdersPageReducer from "./screens/productsPage/slice";
+import OrdersPageReducer from "./screens/ordersPage/slice";
 
 export const store = configureStore({
   // @ts-ignore
