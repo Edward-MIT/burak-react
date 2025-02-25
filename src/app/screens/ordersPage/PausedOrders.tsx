@@ -10,12 +10,14 @@ import { Product } from "../../../lib/types/product";
 import { serverApi } from "../../../lib/config";
 import { Order, OrderItem } from "../../../lib/types/order";
 
-
+/** REDUX SLICE & SELECTOR **/
 const pausedOrdersRetriever = createSelector(retrievePausedOrders, (pausedOrders) => ({pausedOrders}));
 
 export default function PausedOrders() {
      const {pausedOrders} = useSelector(pausedOrdersRetriever);
-     console.log("PausedOrderssss:", pausedOrders)
+
+  /** HANDLERS **/
+
   return(
     <TabPanel value={"1"}>
       <Stack>
@@ -38,7 +40,8 @@ export default function PausedOrders() {
                      <img src={"/icons/close.svg"} alt="bu yerda rasm bor!" />
                      <p>{item.itemQuantity}</p>
                      <img src={"/icons/pause.svg"} alt="bu yerda rasm bor!" />
-                     <p style={{marginLeft:"15px"}}>${item.itemPrice}</p>
+                     <p style={{marginLeft:"15px"}}>
+                      ${ item.itemQuantity *  item.itemPrice}</p>
                     </Box>
                   </Box>
                 );
