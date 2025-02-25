@@ -1,7 +1,5 @@
-import React from "react";
 import {Box, Stack} from "@mui/material";
 import  TabPanel  from "@mui/lab/TabPanel";
-
 import {  useSelector } from "react-redux";
 import { createSelector } from "reselect";
 import { retrieveFinishedOrders } from "./selector";
