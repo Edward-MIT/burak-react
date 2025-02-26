@@ -67,9 +67,9 @@ export default function ProcessOrders(props: ProcessOrdersProps) {
                     <p className={"title-dish"}>{product.productName}</p>
                     <Box className={"price-box"}>
                     <p>${item.itemPrice}</p>
-                      <img src={"/icons/pause.svg"}/>
+                      <img src={"/icons/close.svg"}/>
                       <p>{item.itemQuantity}</p>
-                      <img src={imagePath} alt="rasm bor" />
+                      <img src={"/icons/pause.svg"} alt="rasm bor" />
                       <p style={{marginLeft:"15px"}}>
                         ${ item.itemQuantity *  item.itemPrice}
                         </p>
